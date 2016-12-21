@@ -1,0 +1,16 @@
+<lasso-page dependencies=["require: ./components/test-widget/index.js"] />
+<!DOCTYPE html>
+<html>
+<body>
+<ul>
+	<li><a href="/">Without Await</a></li>
+	<li><a href="/await">With Await</a></li>
+</ul>
+<hr>
+<div>
+	<await(result from data.await)>Await: ${result}</await>
+	<test-widget />
+</div>
+<lasso-body />
+</body>
+</html>
